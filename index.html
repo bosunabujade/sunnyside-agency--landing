@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+
 
 </head>
 <body>
@@ -20,13 +22,13 @@
 
     <header>
       <img src="./images/logo.svg" alt="sunnyside logo" class="logo">
-      <img src="./images/icon-hamburger.svg" alt="hamburger icon" class="hamburger">
-      <nav class="mobile-nav">
+      <img src="./images/icon-hamburger.svg" alt="hamburger icon" class="hamburger" id="hamburger">
+      <nav class="mobile-nav" id="mobile-nav">
         <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="about">About</a></li>
+          <li><a href="services">Services</a></li>
+          <li><a href="projects">Projects</a></li>
+          <li><a href="contact" id="contact">Contact</a></li>
         </ul>
       </nav>
       <div class="landing">
@@ -92,22 +94,22 @@
     <img src="./images/logo.svg" alt="sunnyside logo" class="footer-logo">
     <nav class="footer-nav">
       <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
+        <li><a href="about">About</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="projects">Projects</a></li>
       </ul>
     </nav>
     <div class="socials">
-      <a>
+      <a href="https://www.facebook.com/" target="_blank">
         <img src="./images/icon-facebook.svg" alt="facebook logo">
       </a>
-      <a>
+      <a href="https://www.instagram.com/" target="_blank">
         <img src="./images/icon-instagram.svg" alt="instagram logo">
       </a>
-      <a>
+      <a href="https://www.twitter.com/" target="_blank">
         <img src="./images/icon-twitter.svg" alt="twitter logo">
       </a>
-      <a>
+      <a href="https://www.pinterest.com/" target="_blank">
         <img src="./images/icon-pinterest.svg" alt="pintrest logo">
       </a>
 
