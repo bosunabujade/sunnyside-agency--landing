@@ -114,6 +114,16 @@ section {
     width: 100%;
 }
 
+.desktop-img {
+    display: none;
+}
+
+.center {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
 h2 {
     font-family: 'Fraunces', serif;
     font-size: 35px;
@@ -123,6 +133,7 @@ h2 {
 }
 
 p {
+    color:  hsl(232, 10%, 55%);
     font-size: 17px;
     font-weight: 600;
     line-height: 28px;
@@ -142,7 +153,7 @@ button {
     text-transform: uppercase;
 }
 
-.transfrom button {
+.transform .center button {
     border-bottom: 10px solid rgba(250, 212, 0, .3);
 }
 
@@ -150,7 +161,7 @@ button {
     width: 100%;
 }
 
-.stand-out button {
+.stand-out .center button {
     border-bottom: 10px solid rgba(254, 120, 103, .3);
 }
 
@@ -240,8 +251,13 @@ h5 {
     margin-top: 5px;
 }
 
-.photo-grid img {
+
+.photo-grid-mobile img {
     width: 50%;
+}
+
+.photo-grid-desktop {
+    display: none;
 }
 
 footer {
@@ -307,4 +323,194 @@ footer {
 .attribution a { 
     color: teal; 
     text-decoration: none;
+}
+
+
+@media only screen and (min-width:1200px) {
+    body {
+        width: 1440px;
+    }
+
+    header {
+        background: url(./images/desktop/image-header.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .logo {
+        margin: 20px 40px;  
+        width: 15%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .mobile-nav {
+        background: transparent;
+        display: block;
+        left: 0;
+        position: static;
+        top: 0;
+        width: 35%;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+    }
+
+    .mobile-nav ul li a {
+        color: white;
+    }
+
+    #contact {
+        background-color: white;
+    }
+
+    #contact:hover {
+        background-color: rgba(255, 255, 255, .3);
+        color: white;
+    }
+
+    .landing h1 {
+        font-size: 60px;
+    }
+
+    .landing img {
+        padding-bottom: 350px;
+        padding-top: 50px;
+    }
+
+    section {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .transform img {
+        width: 50%;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+    }
+
+    .center {
+        align-content: center;
+        justify-content: flex-start;
+        padding: 120px 140px;
+        width: 28%;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin: 20px 0 10px 0 ;
+        padding: 0;
+        text-align: start;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 20px 0 10px 0;
+        padding: 0;
+        text-align: start;
+    }
+
+    button {
+        margin: 40px 0; 
+    }
+
+    .transform .center button:hover {
+        border-color: rgba(250, 212, 0, 1);
+    }
+
+    .stand-out img {
+        width: 50%;
+    }
+
+    .stand-out .center button:hover {
+        border-color: rgba(254, 120, 103, 1);
+    }
+    .graphic {
+        background: url(./images/desktop/image-graphic-design.jpg);
+        justify-content: center;
+        width: 50%;
+    }
+
+    .graphic h3,
+    .photography h3 {
+        margin-top: 350px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .graphic p,
+    .photography p {
+        font-size: 17px;
+        text-align: center;
+        padding: 10px 50px;
+        width: 50%;
+    }
+
+    .photography {
+        background: url(./images/desktop/image-photography.jpg);
+        justify-content: center;
+        width: 50%;
+    }
+
+    .client {
+        padding: 100px 100px 150px 100px;
+        width: 85%;
+    }
+
+    .client h4 {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    article {
+        margin: 20px;
+        width: 30%
+    }
+
+    article img {
+        margin-bottom: 50px;
+    }
+
+    article p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    h5 {
+        margin-top: 50px;
+    }
+
+    .photo-grid-mobile {
+        display: none;
+    }
+
+    .photo-grid-desktop {
+        display: flex;
+        width: 100%;
+    }
+
+    .photo-grid-desktop img {
+        width: 25%;
+    }
+
+    .footer-logo {
+        width: 15%;
+    }
+
+    .footer-nav ul li a:hover {
+        color: white;
+    }
+
+    .socials a:hover {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(0%) hue-rotate(311deg) brightness(116%) contrast(100%);
+    }
 }
